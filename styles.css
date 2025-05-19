@@ -1,23 +1,84 @@
+/* General Page Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f8f8f8;
     color: #333;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    animation: fadeIn 1.5s ease-in-out; /* Page Load Animation */
 }
+
+/* Header Styling */
 header {
     background-color: #222;
     color: white;
     padding: 20px;
 }
+
+/* Navigation Styling */
 nav ul {
     list-style: none;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
-a {
+
+nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out; /* Hover Effect */
+}
+
+nav ul li a:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Main Content Styling */
+main h2, main p {
+    animation: fadeIn 1.2s ease-in-out; /* Fade-in effect */
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+    background-color: #cc5200;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
