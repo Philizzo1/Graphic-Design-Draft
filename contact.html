@@ -18,18 +18,19 @@
         </nav>
     </header>
 
-    <section>
+    <section class="contact-section">
         <h2>Get in Touch</h2>
         <p>Have a project in mind? Let’s collaborate!</p>
+
         <form action="mailto:your-email@example.com" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
             <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message" required placeholder="Write your message..."></textarea>
 
             <button type="submit">Send Message</button>
         </form>
